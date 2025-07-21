@@ -56,5 +56,13 @@ export default (program, call) => {
       } else {
         shell.echo('Commit completed successfully!');
       }
+
+      // 执行 git push
+      if (shell.exec(`git push`).code !== 0) {
+        shell.echo('Error: Git push failed');
+        shell.exit(1);
+      } else {
+        shell.echo('Push completed successfully!');
+      }
     });
 };

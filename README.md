@@ -6,7 +6,7 @@
 
 ## 项目简介
 
-gc@commit 是一个基于 Node.js 的命令行工具，帮助你快速生成符合规范的 commit message，并自动执行 `git add .` 和 `git commit`，让团队协作更高效，历史记录更清晰。
+gc@commit 是一个基于 Node.js 的命令行工具，帮助你快速生成符合规范的 commit message，并自动执行 `git add .` 、 `git commit` 和 `git push`，让团队协作更高效，历史记录更清晰。
 
 ---
 ## 使用方法

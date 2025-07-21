@@ -12,8 +12,8 @@ export default (program, call) => {
     .action(async () => {
       const answers = await inquirer.prompt([
         {
-          type: 'checkbox',
-          name: 'checkbox',
+          type: 'list',
+          name: 'type',
           message: '请选择提交类型:',
           choices: [
             { name: '✨ feat: 增加新功能', value: 'feat' },
@@ -41,8 +41,8 @@ export default (program, call) => {
         },
       ]);
 
-      const { checkbox, scope, description } = answers;
-      const commitMessage = `${checkbox}(${scope}): ${description}`;
+      const { type, scope, description } = answers;
+      const commitMessage = `${type}(${scope}): ${description}`;
 
       // 执行 git add . 和 git commit -m
       if (shell.exec(`git add .`).code !== 0) {

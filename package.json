@@ -1,0 +1,19 @@
+{
+  "name": "gc-commit",
+  "version": "1.0.0",
+  "description": "一个用于规范git commit message的命令行工具。",
+  "main": "index.js",
+  "bin": {
+    "gc": "./bin/index.js"
+  },
+  "type": "module",
+  "scripts": {},
+  "author": "youquan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "inquirer": "^9.0.0",
+    "shelljs": "^0.10.0"
+  }
+}

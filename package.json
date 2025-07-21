@@ -1,5 +1,5 @@
 {
-  "name": "gc@commit",
+  "name": "@gc/commit",
   "version": "1.0.0",
   "description": "一个用于规范git commit message的命令行工具。",
   "main": "index.js",

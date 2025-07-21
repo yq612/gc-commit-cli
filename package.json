@@ -1,10 +1,17 @@
 {
-  "name": "@gc/commit",
+  "name": "gc-commit",
   "version": "1.0.0",
   "description": "一个用于规范git commit message的命令行工具。",
   "main": "index.js",
   "bin": {
     "gc": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yq612/gc-commit-cli.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "type": "module",
   "scripts": {},
